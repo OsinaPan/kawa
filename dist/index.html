@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <main>
+        <nav class="col-md-8 offset-md-2 col-10 offset-1">
+            <div id="logo">
+                <h1>EL TIGRE</h1>
+                <p>VENEZUELA COFFEE BEANS</p>
+            </div>
+            <div id="tabs">
+                <ul>
+                    <li data-template="home">HOME</li>
+                    <li data-template="products">PRODUCTS</li>
+                    <li data-template="contact">CONTACT</li>
+                </ul>
+            </div>
+        </nav>
+        <div id="title">
+            <p class="col-12 col-lg-7" id="random-first-header"></p>
+            <p class="col-12" id="random-second-header"></p>
+            <hr>
+        </div>
+        <div id="discover">
+            <p>DISCOVER</p>
+            <i class="icon-down-circled2 d-inline-block" id="scroll"></i>
+        </div>
+    </main>
+    <section id="content">
+        <div id="header">
+            <h1 id="content-title">{{tytul z handlebars}}</h1>
+            <hr>
+        </div>
+        <div id="main-content" class="d-flex flex-column align-items-center"></div>
+    </section>
+    <footer class="d-flex flex-column align-items-center">
+        <h1>ABOUT US</h1>
+        <hr>
+        <div class="m-3 col-10 col-lg-8 col-xl-6">
+            <div class="owl-carousel col-12 h-100">
+                <div class="carousel-cell w-100 m-1">
+                    <div class="col-xxl-4 col-6 float-start">
+                        <img src="../images/1.png" alt="about us image 1">
+                    </div>
+                    <div class="col-xxl-8 col-6 float-start">
+                        <p class="name mb-5 mt-3 ms-5">Ping <b>Nihao</b></p>
+                        <p class="quote ms-5">Ping is the youngest in the team. He doesnt't like calling coffee a mysterious act. He says, a good coffee is like a mathematical formula. Once you figured it out, every coffee you make is a masterpiece.</p>
+                    </div>
+                </div>
+                <div class="carousel-cell w-100 m-1">
+                    <div class="col-xxl-4 col-6 float-start">
+                        <img src="../images/2.png" alt="about us image 2">
+                    </div>
+                    <div class="col-xxl-8 col-6 float-start">
+                        <p class="name mb-5 mt-3 ms-5">Max <b>Selfish</b></p>
+                        <p class="quote ms-5">Max is the austrian barista with years of experience from the hotels across the whole Europe. "Venezuela coffee was a lightening experience for me! I have never drink such an amazing coffee!", he says.</p>
+                    </div>
+                </div>
+                <div class="carousel-cell w-100 m-1">
+                    <div class="col-xxl-4 col-6 float-start">
+                        <img src="../images/3.png" alt="about us image 3">
+                    </div>
+                    <div class="col-xxl-8 col-6 float-start">
+                        <p class="name mb-5 mt-3 ms-5">Elizabeth Doherty</p>
+                        <p class="quote ms-5">Experienced barista from Bahamas. She says that Venezuela has opened her eyes on coffee. "It's not about the taste", she says. "It's all about the feelings".</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <p id="trademark">&copy; 2021 EL TIGRE inc.</p>
+
+    
+    <script src="../js/lib/jquery.js"></script>
+    <script src="../js/lib/handlebars-v4.7.7.js"></script>
+    <script src="../js/lib/owl.carousel.js"></script>
+    <script src="../js/lib/owl.autoplay.js"></script>
+    <script src="../js/script.js" type="module"></script>
+</body>
+</html>

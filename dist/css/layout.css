@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source sans pro";
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+main {
+  height: 939px;
+  width: 100vw;
+  background-position-x: -180px;
+  background-image: linear-gradient(rgba(20, 20, 20, 0.822), rgba(20, 20, 20, 0.822)), url("../images/background.png");
+}
+main nav {
+  height: 90px;
+}
+main nav #logo {
+  margin-top: 20px;
+  color: #fff;
+  float: left;
+}
+main nav #logo p {
+  margin-top: 4px;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 4px;
+}
+main nav #logo h1 {
+  letter-spacing: 9px;
+}
+main nav #tabs {
+  float: right;
+  line-height: 90px;
+  color: #bbbbbb;
+  font-weight: 600;
+  font-size: 14px;
+}
+main nav #tabs ul {
+  list-style: none;
+}
+main nav #tabs ul li {
+  display: inline-block;
+  margin: 0 15px;
+  cursor: pointer;
+}
+main #title {
+  float: left;
+  color: #bea67c;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  font-size: 80px;
+  margin-top: 240px;
+  letter-spacing: 25px;
+}
+main #title hr {
+  width: 280px;
+  height: 5px;
+  background-color: #bea67c;
+  outline: none;
+  border: none;
+  margin: 0 calc((100% - 280px) / 2);
+  margin-top: 50px;
+}
+main #discover {
+  float: left;
+  margin-top: 220px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 10px;
+}
+main #discover #scroll {
+  cursor: pointer;
+  margin-top: 25px;
+  font-size: 40px;
+}
+
+@media (max-width: 991px) {
+  #title {
+    margin-top: 120px !important;
+  }
+}
+.even .price-container {
+  left: 0 !important;
+  border-top: 230px solid #bea67c;
+  border-right: 320px solid transparent;
+  border-left: 0 !important;
+}
+.even .price-container span.old-price {
+  right: -170px !important;
+}
+.even .price-container span.actual-price {
+  right: -120px !important;
+}
+
+section#content #header {
+  width: 100%;
+  margin-top: 50px;
+}
+section#content #header #content-title {
+  color: #bea67c;
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+section#content #header hr {
+  width: 750px;
+  height: 5px;
+  background-color: #bea67c;
+  outline: none;
+  border: none;
+  margin: 0 calc((100% - 750px) / 2);
+  margin-top: 20px;
+}
+section#content .product {
+  display: flex;
+  flex-flow: row wrap;
+}
+section#content .product .info * {
+  float: left;
+}
+section#content .product .info .title {
+  font-size: 40px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-top: 50px;
+  float: left;
+}
+section#content .product .info .description {
+  margin-top: 15px;
+  width: 100%;
+}
+section#content .product .info .description hr {
+  width: 100px;
+  height: 3px;
+  background-color: #bea67c;
+  outline: none;
+  border: none;
+  float: left;
+}
+section#content .product .info .description p {
+  float: left;
+  width: 300px;
+  margin: -7px 5px 5px 15px;
+  font-size: 12px;
+  color: #4d4d4d;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 1px;
+}
+section#content .product .info .ratings {
+  margin-top: 50px;
+  width: 50%;
+}
+section#content .product .info .ratings > span {
+  margin: 2px 0;
+  display: block;
+  width: 100%;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+section#content .product .info .ratings > span .rating {
+  color: #bea67c;
+}
+section#content .product .info #most-popular img {
+  width: 80%;
+}
+section#content .product .image {
+  position: relative;
+}
+section#content .product .image img {
+  float: right;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.75);
+  width: 100%;
+}
+section#content .product .image .price-container {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 230px solid #bea67c;
+  border-left: 320px solid transparent;
+  color: #fff;
+}
+section#content .product .image .price-container span.old-price {
+  position: absolute;
+  top: -195px;
+  right: 120px;
+  font-size: 30px;
+  font-weight: 600;
+}
+section#content .product .image .price-container span.old-price:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -25%;
+  width: 150%;
+  height: 2px;
+  background-color: #ffffff;
+}
+section#content .product .image .price-container span.actual-price {
+  position: absolute;
+  top: -165px;
+  right: 20px;
+  font-size: 55px;
+  font-weight: bold;
+}
+section#content form {
+  padding: 20px;
+}
+section#content form div.input {
+  width: 100%;
+  margin: 10px 0;
+}
+section#content form div.input label {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: 15px 0;
+  font-weight: 600;
+  letter-spacing: 7px;
+  font-size: 18px;
+}
+section#content form div.input input[type=text], section#content form div.input textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 0;
+  outline: none;
+  border: 2px solid #000;
+  resize: none;
+}
+section#content form div.input input[type=submit] {
+  width: 50%;
+  margin: 15px 25%;
+  height: 50px;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  letter-spacing: 4px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #bea67c;
+  cursor: pointer;
+}
+
+footer {
+  float: left;
+  width: 100%;
+  height: 1000px;
+  margin-top: 100px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8156862745), rgba(0, 0, 0, 0.8156862745)), url("../images/about-us.jpg");
+  background-size: cover;
+  height: 700px;
+}
+footer h1 {
+  margin-top: 50px;
+  color: #bea67c;
+  font-weight: bold;
+  font-size: 60px;
+  letter-spacing: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+footer hr {
+  width: 750px;
+  height: 5px;
+  background-color: #bea67c;
+  outline: none;
+  border: none;
+  margin: 20px calc((100% - 750px) / 2);
+}
+footer .carousel-cell {
+  color: #fff;
+}
+footer .carousel-cell .name {
+  font-size: 35px;
+}
+footer .carousel-cell .quote {
+  font-size: 25px;
+  font-style: italic;
+}
+
+#trademark {
+  float: left;
+  padding: 20px;
+  text-align: center;
+  color: #333333;
+  width: 100%;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3NyYy9zYXNzL2xheW91dC5zY3NzIiwibGF5b3V0LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFJQTtFQUNJLFNBQUE7RUFDQSxVQUFBO0VBQ0Esc0JBQUE7RUFDQSw4QkFBQTtBQ0hKOztBRE1BO0VBQ0ksV0FBQTtFQUNBLFlBQUE7QUNISjs7QURNQTtFQUNJLGtCQUFBO0FDSEo7O0FETUE7RUFDSSxhQUFBO0VBQ0EsWUFBQTtFQUNBLDZCQUFBO0VBQ0gsb0hBQUE7QUNIRDtBREtJO0VBQ0ksWUFBQTtBQ0hSO0FES1E7RUFDSSxnQkFBQTtFQUNBLFdBQUE7RUFDQSxXQUFBO0FDSFo7QURLWTtFQUNJLGVBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxtQkFBQTtBQ0hoQjtBRE1ZO0VBQ0ksbUJBQUE7QUNKaEI7QURRUTtFQUNJLFlBQUE7RUFDQSxpQkFBQTtFQUNBLGNBQUE7RUFDQSxnQkFBQTtFQUNBLGVBQUE7QUNOWjtBRFFZO0VBQ0ksZ0JBQUE7QUNOaEI7QURRZ0I7RUFDSSxxQkFBQTtFQUNBLGNBQUE7RUFDQSxlQUFBO0FDTnBCO0FEWUk7RUFDSSxXQUFBO0VBQ0EsY0FsRUU7RUFtRUYsaUJBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxvQkFBQTtBQ1ZSO0FEWVE7RUFDSSxZQUFBO0VBQ0EsV0FBQTtFQUNBLHlCQTdFRjtFQThFRSxhQUFBO0VBQ0EsWUFBQTtFQUNBLGtDQUFBO0VBQ0EsZ0JBQUE7QUNWWjtBRGNJO0VBQ0ksV0FBQTtFQUNBLGlCQUFBO0VBQ0EsV0FBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLFdBQUE7RUFDQSxvQkFBQTtBQ1pSO0FEY1E7RUFDSSxlQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0FDWlo7O0FEaUJBO0VBQ0k7SUFDSSw0QkFBQTtFQ2ROO0FBQ0Y7QURrQkk7RUFDSSxrQkFBQTtFQUNBLCtCQUFBO0VBQ0EscUNBQUE7RUFDQSx5QkFBQTtB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 */

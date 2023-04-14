@@ -1,0 +1,364 @@
+$overlay-color: rgba(20, 20, 20, 0.822);
+$primary: #bea67c;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source sans pro';
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+main {
+    height: 939px;
+    width: 100vw;
+    background-position-x: -180px;
+	background-image: linear-gradient($overlay-color, $overlay-color), url('../images/background.png');
+
+    nav {
+        height: 90px;
+
+        #logo {
+            margin-top: 20px;
+            color: #fff;
+            float: left;
+
+            p {
+                margin-top: 4px;
+                font-size: 10px;
+                font-weight: bold;
+                letter-spacing: 4px;
+            }
+
+            h1 {
+                letter-spacing: 9px;
+            }
+        }
+
+        #tabs {
+            float: right;
+            line-height: 90px;
+            color: #bbbbbb;
+            font-weight: 600;
+            font-size: 14px;
+            
+            ul {
+                list-style: none;
+
+                li {
+                    display: inline-block;
+                    margin: 0 15px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    #title {
+        float: left;
+        color: $primary;
+        font-weight: bold;
+        text-align: center;
+        width: 100%;
+        font-size: 80px;
+        margin-top: 240px;
+        letter-spacing: 25px;
+
+        hr {
+            width: 280px;
+            height: 5px;
+            background-color: $primary;
+            outline: none;
+            border: none;
+            margin: 0 calc((100% - 280px) / 2);
+            margin-top: 50px;
+        }
+    }
+
+    #discover {
+        float: left;
+        margin-top: 220px;
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        letter-spacing: 10px;
+
+        #scroll {
+            cursor: pointer;
+            margin-top: 25px;
+            font-size: 40px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    #title {
+        margin-top: 120px !important;
+    }
+}
+
+.even {
+    .price-container {
+        left: 0 !important;
+        border-top: 230px solid $primary;
+        border-right: 320px solid transparent;
+        border-left: 0 !important;
+
+        span.old-price {
+            right: -170px !important;
+        }
+
+        span.actual-price {
+            right: -120px !important;
+        }
+    }
+}
+
+section#content {
+    #header {
+        width: 100%;
+        margin-top: 50px;
+
+        #content-title {
+            color: $primary;
+            font-weight: bold;
+            font-size: 60px;
+            letter-spacing: 20px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        hr {
+            width: 750px;
+            height: 5px;
+            background-color: $primary;
+            outline: none;
+            border: none;
+            margin: 0 calc((100% - 750px) / 2);
+            margin-top: 20px;
+        }
+    }
+
+    .product {
+        display: flex;
+        flex-flow: row wrap;
+
+        .info {
+            * {
+                float: left;
+            }
+
+            .title {
+                font-size: 40px;
+                font-weight: bold;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+                margin-top: 50px;
+                float: left;
+            }
+
+            .description {
+                margin-top: 15px;
+                width: 100%;
+
+                hr {
+                    width: 100px;
+                    height: 3px;
+                    background-color: $primary;
+                    outline: none;
+                    border: none;
+                    float: left;
+                }
+
+                p {
+                    float: left;
+                    width: 300px;
+                    margin: -7px 5px 5px 15px;
+                    font-size: 12px;
+                    color: #4d4d4d;
+                    font-weight: 400;
+                    line-height: 20px;
+                    letter-spacing: 1px;
+                }
+            }
+
+            .ratings {
+                margin-top: 50px;
+                width: 50%;
+
+                > span {
+                    margin: 2px 0;
+                    display: block;
+                    width: 100%;
+                    font-size: 18px;
+                    font-weight: bold;
+                    letter-spacing: 3px;
+
+                    .rating {
+                        color: $primary;
+                    }
+                }
+            }
+
+            #most-popular {
+                img {
+                    width: 80%;
+                }
+            }
+        }
+
+        .image {
+            position: relative;
+
+            img {
+                float: right;
+                -webkit-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.75);
+                width: 100%;
+            }
+
+            .price-container {
+                top: 0;
+                right: 0;
+                position: absolute;
+                width: 0;
+                height: 0;
+                border-top: 230px solid $primary;
+                border-left: 320px solid transparent;
+                color: #fff;
+
+                span.old-price {
+                    position: absolute;
+                    top: calc(-230px + 35px);
+                    right: 120px;
+                    font-size: 30px;
+                    font-weight: 600;
+
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        top: 50%;
+                        left: -25%;
+                        width: 150%;
+                        height: 2px;
+                        background-color: #ffffff;
+                    }
+                }
+
+                span.actual-price {
+                    position: absolute;
+                    top: calc(-230px + 65px);
+                    right: 20px;
+                    font-size: 55px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    form {
+        // width: 20%;
+        // margin: 0 calc((100% - 20%) / 2);
+        padding: 20px;
+
+        div.input {
+            width: 100%;
+            margin: 10px 0;
+
+            label {
+                width: 100%;
+                text-align: center;
+                display: block;
+                margin: 15px 0;
+                font-weight: 600;
+                letter-spacing: 7px;
+                font-size: 18px;
+            }
+
+            input[type=text], textarea {
+                width: 100%;
+                padding: 10px;
+                border-radius: 0;
+                outline: none;
+                border: 2px solid #000;
+                resize: none;
+            }
+
+            input[type=submit] {
+                width: 50%;
+                margin: 15px calc((100% - 50%) / 2);
+                height: 50px;
+                border-radius: 0;
+                outline: none;
+                border: none;
+                font-size: 18px;
+                letter-spacing: 4px;
+                font-weight: bold;
+                color: #fff;
+                background-color: $primary;
+                cursor: pointer;
+            }
+        }        
+    }
+}
+
+footer {
+    float: left;
+    width: 100%;
+    height: 1000px;
+    margin-top: 100px;
+    background-image: linear-gradient(#000000d0, #000000d0), url('../images/about-us.jpg');
+    background-size: cover;
+    height: 700px;
+
+    h1 {
+        margin-top: 50px;
+        color: $primary;
+        font-weight: bold;
+        font-size: 60px;
+        letter-spacing: 20px;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    hr {
+        width: 750px;
+        height: 5px;
+        background-color: $primary;
+        outline: none;
+        border: none;
+        margin: 20px calc((100% - 750px) / 2);
+    }
+
+    .carousel-cell {
+        color: #fff;
+
+        .name {
+            font-size: 35px;
+        }
+
+        .quote {
+            font-size: 25px;
+            font-style: italic;
+        }
+    }
+}
+
+#trademark {
+    float: left;
+    padding: 20px;
+    text-align: center;
+    color: #333333;
+    width: 100%;
+}
